@@ -1,0 +1,138 @@
+.container{
+
+}
+
+.feature_bar{
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+}
+
+.each_feature{
+	box-shadow: 0 4px 8px 0px rgba(0,0,0,0.2);
+	margin-top: 10px;
+	border-radius: 30px;
+	margin-left: 30px;
+	background-color: white;
+	padding: 10px;
+	font-size: 20px;
+	font-family: var(--fontStyle);
+	max-width: 210px;
+	min-width: 60px;
+	height: 30px;
+}
+
+.each_feature img{
+	float: left;
+	width: 30px;
+}
+
+.each_feature label{
+	float: left;
+	margin-left: 10px;
+	margin-top: 3px;
+	
+}
+
+.each_feature:hover, .product_card:hover{
+	cursor: pointer;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.top_content{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	margin-bottom: 20px;
+	font-family: var(--fontStyle);
+}
+
+.top_content a{
+	margin: auto;
+}
+
+.product_card{
+	box-shadow: 0 4px 8px 0px rgba(0,0,0,0.2);
+	margin-top: 20px;
+	float: left;
+	padding: 15px;
+	min-width: 60px;
+	max-width: 200px;
+	height: 250px;
+	background-color: white;
+	margin-left: 20px;
+
+}
+
+.product_card img{
+	max-height: 200px;
+	min-height: 100px;
+	max-width: 200px;
+	min-width: 60px;
+}
+
+.description{
+	font-size: 18px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2; /* number of lines to show */
+	-webkit-box-orient: vertical;
+}
+
+.price{
+	font-size: 25px;
+	color: darkred;
+}
+
+
+@media only screen and (max-width: 1352px) {
+	.feature_bar{
+
+		grid-template-columns: auto auto auto auto;
+	}
+	.top_content{
+		grid-template-columns: auto auto auto auto;
+	}
+
+}
+
+@media only screen and (max-width: 1105px) {
+	.feature_bar{
+		
+		grid-template-columns: auto auto auto;
+	}
+	.top_content{
+		grid-template-columns: auto auto auto;
+	}
+
+}
+
+
+@media only screen and (max-width: 855px) {
+	.each_feature{
+		font-size: 15px;
+		margin-left: 3px;
+		padding: 2px;
+	}
+
+	.each_feature img{
+		float: left;
+		width: 30px;
+	}
+
+	.feature_bar{
+		
+		grid-template-columns:auto auto;
+	}
+	.top_content{
+		grid-template-columns:auto auto;
+	}
+	.product_card{
+		padding: 5px;
+		margin-left: 3px;
+	}
+
+
+
+}

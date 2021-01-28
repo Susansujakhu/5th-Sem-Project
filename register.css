@@ -1,0 +1,87 @@
+.form_container{
+	
+	padding: 20px;
+	display: grid;
+	grid-template-columns: 18% 25% 18% 25%;
+	font-family: var(--fontStyle);
+	font-size: 20px;
+	color: grey;
+	justify-content: space-around;
+}
+
+.form_container label{
+	margin-top: 20px;
+}
+
+.form_container input{
+	margin-top: 20px;
+	color: grey;
+	font-size: 20px;
+	padding: 5px;
+	box-sizing: border-box;
+	border: 3px solid var(--primary);
+	border-radius: 4px;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+
+}
+
+input:focus{
+	border: 3px solid green;
+}
+
+.photo{
+	border: none;
+}
+
+.photo:focus{
+	border: none;
+}
+
+.buttons{
+	grid-column: 1 / span 4;
+	border: none;
+	margin-left: 45%;
+	color: white;
+}
+
+.buttons input{
+	padding: 10px;
+	color: white;
+	border: none;
+	transition: 1s;
+	cursor: pointer;
+}
+
+.rsubmit{
+	
+	background-color: var(--secondary);
+}
+
+.rcancel{
+
+	background-color: darkred;
+}
+
+.rsubmit:hover{
+
+	background-color: green;
+}
+
+.rcancel:hover{
+	background-color: red;
+}
+
+@media only screen and (max-width: 780px){
+	.form_container{
+
+		padding: 20px;
+		display: grid;
+		grid-template-columns: auto auto;
+		font-family: var(--fontStyle);
+		font-size: 20px;
+		color: grey;
+		justify-content: space-around;
+	}
+}
